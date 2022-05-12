@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root {
+    --main: rgb(52, 155, 224);
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #fafbfe;
+}
+
+/* Navigation */
+.navbar.navbar-expand-lg {
+    background-color: var(--main);
+}
+
+.btn-slide svg {
+    width: 25px;
+    height: 25px;
+}
+
+.nav-link.active {
+    color: #fff !important;
+}
+
+.searchInput {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1.5px solid rgb(212, 206, 206);
+}
+
+.searchInput:focus {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1.5px solid #fff;
+    box-shadow: none;
+}
+
+.searchInput::placeholder {
+    color: #f4f4f4;
+}
+
+.searchBtn {
+    background-color: #fff;
+    color: var(--main);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+.searchBtn:hover {
+    color: var(--main);
+    transform: translateY(-1px);
+}
+
+/* Navigation */
+
+
+/* Side nav */
+.side-nav {
+    background-color: #313a46;
+    position: fixed;
+    width: 260px;
+    height: 100vh;
+    padding-top: 80px;
+    transition: all 0.5s ease-in-out;
+}
+
+.side-nav li a {
+    color: #9a9a9a;
+    margin-left: 7px;
+    margin-bottom: 10px;
+}
+
+.side-nav li a:hover {
+    color: white;
+}
+/* Side nav */
+
+
+/* Main content */
+.main-content {
+    margin-left: 260px;
+}
+
+.main-content p {
+    color: #6d6d6d;
+}
+/* Main content */
+
+@media only screen and (max-width: 992px) {
+    .side-nav {
+        position: fixed;
+        left: -260px;
+        width: 260px;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+.slide {
+    left: 0;
+}

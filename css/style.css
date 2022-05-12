@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #fafbfe;
+  overflow-x: hidden;
+}
+
+/* Navigation */
+
+.navbar.navbar-expand-lg {
+  background-color: rgb(52, 155, 224);
+}
+
+.btn-slide svg {
+  width: 25px;
+  height: 25px;
+  /* padding: 1px;
+    border: 1.5px solid #f4f4f4; */
+}
+
+.nav-link.active {
+  color: #fff !important;
+}
+
+.searchInput::placeholder {
+  color: #fff;
+}
+
+.searchInput {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1.5px solid #fff;
+}
+
+.searchInput:focus {
+  background-color: transparent;
+  color: #fff;
+  box-shadow: none;
+  border-bottom: 1.5px solid rgb(224, 221, 221);
+}
+
+.searchBtn {
+  /* border: 1px solid #555; */
+  border-radius: 50%;
+  color: rgb(52, 155, 224);
+  border-radius: 50%;
+  transform: translateY(-1px);
+}
+
+.searchBtn:hover {
+  color: rgb(52, 155, 224);
+  transition: all 0.4s;
+}
+
+/* Navigation */
+
+/* Main Content */
+.main-content {
+  margin-left: 260px;
+}
+
+.main-content p {
+  color: #6d6d6d;
+}
+/* Main Content */
+
+/* Side nav */
+.side-nav {
+  background-color: #313a46;
+  position: fixed;
+  padding-top: 80px;
+  width: 260px;
+  height: 1000vh;
+  transition: all 0.5s ease-in-out;
+}
+
+.side-nav li a {
+  color: #9a9a9a;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-left: 7px;
+}
+
+.side-nav li a:hover {
+  color: white;
+}
+/* Side nav */
+
+@media only screen and (max-width: 992px) {
+  .side-nav {
+    position: fixed;
+    left: -260px;
+    width: 260px;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+}
+
+.slide {
+  left: 0;
+}
